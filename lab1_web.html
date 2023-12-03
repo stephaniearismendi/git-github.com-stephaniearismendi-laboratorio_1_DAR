@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ejercicio 1 - Estados de la petición AJAX</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="code.js"></script>
+
+  <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Order msdt:dt="string">966200.000000000</mso:Order>
+<mso:ContentTypeId msdt:dt="string">0x010100DF3D7C797EA12745A270EF30E38719B9</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+  <form action="#">
+    URL:
+    <input type="text" id="recurso" size="70" />
+    <input type="button" id="enviar" value="Mostrar contenidos" />
+  </form>
+
+  <div id="principal">
+    <h2>Contenidos del archivo:</h2>
+    <div id="contenidos"></div>
+
+    <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+    <div id="cabeceras"></div>
+  </div>
+
+  <div id="secundario">
+    <h2>Estados de la petición:</h2>
+    <div id="estados"></div>
+
+    <h2>Código de estado:</h2>
+    <div id="codigo"></div>
+  </div>
+
+  <div id="pruebas">
+    <h2>Pruebas:</h2>
+
+    <button onclick="pruebaPalindromo()">Verificar Palíndromo</button>
+    <input type="text" id="entradaPalindromo" placeholder="Ingrese una cadena" />
+    <div id="resultadoPalindromo"></div>
+
+    <button onclick="pruebaMayor()">Encontrar el Mayor</button>
+    <input type="text" id="entradaNumero1" placeholder="Número 1" />
+    <input type="text" id="entradaNumero2" placeholder="Número 2" />
+    <div id="resultadoMayor"></div>
+
+    <button onclick="pruebaVocales()">Encontrar Vocales</button>
+    <input type="text" id="entradaVocales" placeholder="Ingrese una frase" />
+    <div id="resultadoVocales"></div>
+
+    <button onclick="pruebaContarVocales()">Contar Vocales</button>
+    <input type="text" id="entradaContarVocales" placeholder="Ingrese una frase" />
+    <div id="resultadoContarVocales"></div>
+  </div>
+
+</body>
+
+</html>
